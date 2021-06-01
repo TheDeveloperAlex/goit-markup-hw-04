@@ -24,14 +24,14 @@
   --indent-30px: 30px;
 }
 
-html {
+/* html {
   box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 body {
   margin: 0;
@@ -131,7 +131,8 @@ p {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-.nav:hover {
+.nav:hover,
+.nav:focus {
   color: var(--animation-color);
 }
 
@@ -153,7 +154,8 @@ p {
   letter-spacing: 0.03em;
 }
 
-.contacts:hover {
+.contacts:hover,
+.contacts:focus {
   color: var(--animation-color);
 }
 /* Секции */
@@ -169,6 +171,15 @@ p {
   text-align: center;
 
   background-color: var(--logo-color);
+}
+
+.bg-img {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/index/hero/hero-img.jpg);
 }
 h1 {
   width: 696px;
@@ -203,7 +214,8 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--animation-botton-color);
 }
 
