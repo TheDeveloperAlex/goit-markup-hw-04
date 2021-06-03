@@ -23,6 +23,7 @@
   --border-color: #eeeeee;
   --indent-30px: 30px;
   --attention-grid-item: 4;
+  --client-grid-item: 6;
 }
 
 body {
@@ -125,7 +126,7 @@ p {
   color: var(--animation-color);
 }
 
-/* Контакты */
+/* Контакты  */
 .contacts {
   display: block;
   padding-top: 32px;
@@ -143,9 +144,49 @@ p {
 .contacts:focus {
   color: var(--animation-color);
 }
+
+.contacts-nav .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-nav-link {
+  color: var(--main-text-color);
+  margin-right: 10px;
+}
+
+.contacts-nav-link:hover,
+.contacts-nav-link:focus {
+  color: var(--animation-color);
+}
+
+.contact-img-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-link-tel {
+  color: var(--main-text-color);
+}
+
+.contact-link-tel:hover,
+.contact-link-tel:focus {
+  color: var(--animation-color);
+}
+
+.contact-img-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* Секции */
 
-/* Герой */
+/* ---------------------------------Герой ---------------------------------*/
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -204,7 +245,7 @@ h2 {
   margin: 0px;
 }
 
-/* Наши преимущества */
+/* ---------------------------------Наши преимущества  --------------------------------- */
 h3 {
   color: var(--header-color);
   margin: 0;
@@ -236,15 +277,29 @@ h3 {
   margin-left: var(--indent-30px);
 }
 
-.attention-item::before {
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.attention-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* .attention-item::before {
   content: '';
   display: block;
-  height: 120px;
+  
   margin-bottom: var(--indent-30px);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f5f4fa;
-  border-radius: 4px;
+  b
+  
 }
 
 .icon-1::before {
@@ -261,6 +316,10 @@ h3 {
 
 .icon-4::before {
   background-image: url(../img/index/attention/img-4.svg);
+} */
+
+.attention-describtion {
+  padding-top: 30px;
 }
 
 .attention-header {
@@ -281,7 +340,7 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-/* Чем мы занимаемся */
+/* ---------------------------------Чем мы занимаемся --------------------------------- */
 
 .doing-section {
   padding-top: 0px;
@@ -302,7 +361,7 @@ h3 {
   margin-left: var(--indent-30px);
 }
 
-/* Наша команда */
+/*---------------------------------Наша команда---------------------------------*/
 .team {
   background-color: var(--bg-color);
 }
@@ -377,34 +436,88 @@ h3 {
   justify-content: center;
 }
 
-.network-link-icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
+.network-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  border-radius: 50%;
 }
 
-.network-link-icon:hover,
-.network-link-icon:focus {
-  fill: var(--main-header-color);
+.network-link-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.network-link:hover,
+.network-link:focus {
+  color: var(--main-header-color);
+  background-color: var(--animation-color);
 }
 
 .networks-box-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.networks-box-item {
-  width: 44px;
-  height: 44px;
-  padding: 12px 12px;
-  border-radius: 50%;
+/*---------------------------------Постоянные клиенты-------------------------------*/
+
+.client-list {
+  display: flex;
+  margin-left: calc(-1 * var(--indent-30px));
+  margin-top: calc(-1 * var(--indent-30px));
+  width: 1200px;
+  flex-wrap: wrap;
 }
 
-.networks-box-item:hover,
-.networks-box-item:focus {
-  background-color: var(--animation-color);
+.client-list-item {
+  margin-top: var(--indent-30px);
+  margin-left: var(--indent-30px);
+  color: #afb1b8;
+  min-height: 92px;
+  /* width: 170px; */
+  flex-basis: calc(
+    (100% - (var(--indent-30px) + 2px) * var(--client-grid-item)) / var(--client-grid-item)
+  );
+  /* flex-basis: calc(100% / 6 - 32px); */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+/* .client-list-item:hover,
+.client-list-item:focus {
+  color: var(--animation-color);
+  border-color: var(--animation-color);
+} */
+
+.client-list-link:hover,
+.client-list-link:focus {
+  color: var(--animation-color);
+  border-color: var(--animation-color);
 }
 
-/* Подвал сайта */
+.client-list-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 106px;
+  height: 60px; */
+  color: inherit;
+  border: 1px solid #afb1b8;
+}
+
+.client-list-link-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+/*---------------------------------Подвал сайта ---------------------------------*/
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -477,12 +590,12 @@ address {
   display: flex;
 }
 
-.footer-network-item {
+/* .footer-network-item {
   width: 44px;
   height: 44px;
-}
+}  */
 
-.network::before {
+/* .network::before {
   content: '';
   width: 44px;
   height: 44px;
@@ -491,34 +604,35 @@ address {
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.1);
   background-position: center;
+} */
+
+.network {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-header-color);
 }
 
-.network:hover::before,
-.network:focus::before {
+.network-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.network:hover,
+.network:focus {
   background-color: var(--animation-color);
-}
-
-.icon-insta::before {
-  background-image: url(../img/index/footer-networs/instagram.svg);
-}
-
-.icon-twit::before {
-  background-image: url(../img/index/footer-networs/twiter.svg);
-}
-
-.icon-face::before {
-  background-image: url(../img/index/footer-networs/img-3.svg);
-}
-
-.icon-link::before {
-  background-image: url(../img/index/footer-networs/linkedin.svg);
 }
 
 .footer-network-item:not(:last-child) {
   margin-right: 10px;
 }
 
-/* Стили к portfolio.html */
+/* ---------------------------------    Стили к portfolio.html   --------------------------------- */
 
 .filter {
   display: flex;
@@ -552,7 +666,7 @@ address {
   color: var(--main-header-color);
 }
 
-/* СЕТКА */
+/*---------------------------------  СЕТКА  ---------------------------------*/
 
 .gallery {
   display: flex;
@@ -597,7 +711,7 @@ address {
   letter-spacing: 0.03em;
 }
 
-/* Components */
+/*  ---------------------------------  Components --------------------------------- */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;

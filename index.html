@@ -31,20 +31,20 @@
             </nav>
             <ul class="contacts-nav">
                 <li class="item">
-                    <a href="">
-                        <!-- <svg class="contact-img envelope">
+                    <a href="mailto:info@example.com" target="_blank" class="contacts">
+                        <svg class="contact-img-envelope">
                             <use href="./img/sprite.svg#icon-envelope"></use>
-                        </svg> -->
+                        </svg>
+                        info@devstudio.com
                     </a>
-                    <a href="mailto:info@example.com" target="_blank" class="contacts">info@devstudio.com</a>
                 </li>
 
                 <li class="item">
-                    <a href="tel:+380991111111" target="_blank" class="contacts">+38 096 111 11 11</a>
-                    <a href="">
-                        <!-- <svg class="contact-img envelope">
+                    <a href="tel:+380991111111" target="_blank" class="contacts contact-link-tel">
+                        <svg class="contact-img-tel">
                             <use href="./img/sprite.svg#icon-tel"></use>
-                        </svg> -->
+                        </svg>
+                        +38 096 111 11 11
                     </a>
                 </li>
             </ul>
@@ -55,11 +55,11 @@
         <!-- Герой -->
         <section class=" section hero bg-img">
             <!-- <div class="bg-img"> -->
-                <div class="container">
+            <div class="container">
                     <h1>Эффективные решения для вашего бизнеса</h1>
                     <button type="button" class="button">Заказать услугу</button>
-                </div>
-            <!-- </div> -->
+                <!-- </div> -->
+            </div>
         </section>
         <section class="section">
             <div class="container">
@@ -67,25 +67,58 @@
 
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="attention">
-                    <li class="attention-item attention-item icon-1">
-                        <h3 class="attention-header">Внимание к деталям</h3>
-                        <p class="attention-paragraph">Идейные соображения, а также начало повседневной работы по
+                    <a href="./img/sprite.svg"></a>
+                    <li class="attention-item  ">
+                        <div class="icon-box">
+                            <svg class="attention-icon">
+                                <use href="./img/sprite.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <div class="attention-describtion">
+                            <h3 class="attention-header">Внимание к деталям</h3>
+                            <p class="attention-paragraph">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
+                        </div>
+                        
                     </li>
-                    <li class="attention-item attention-item icon-2">
-                        <h3 class="attention-header">Пунктуальность</h3>
-                        <p class="attention-paragraph">Задача организации, в особенности же рамки и место обучения
+                    <li class="attention-item">
+                        <div class="icon-box">
+                            <svg class="attention-icon">
+                                <use href="./img/sprite.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <div class="attention-describtion">
+                            <h3 class="attention-header">Пунктуальность</h3>
+                            <p class="attention-paragraph">Задача организации, в особенности же рамки и место обучения
                             кадров влечет за собой.</p>
+                        </div>
+                       
                     </li>
-                    <li class="attention-item attention-item icon-3">
-                        <h3 class="attention-header">Планирование</h3>
-                        <p class="attention-paragraph">Равным образом консультация с широким активом в значительной
-                            степени обуславливает.</p>
+                    <li class="attention-item ">
+                        <div class="icon-box">
+                            <svg class="attention-icon">
+                                <use href="./img/sprite.svg#icon-diagramm"></use>
+                            </svg>
+                        </div>
+                        <div class="attention-describtion">
+                            <h3 class="attention-header">Планирование</h3>
+                            <p class="attention-paragraph">Равным образом консультация с широким активом в значительной
+                                степени обуславливает.</p>
+                        </div>
+                        
                     </li>
-                    <li class="attention-item attention-item icon-4">
-                        <h3 class="attention-header">Современные технологии</h3>
-                        <p class="attention-paragraph">Значимость этих проблем настолько очевидна, что реализация
-                            плановых заданий.</p>
+                    <li class="attention-item" >
+                        <div class="icon-box">
+                            <svg class="attention-icon">
+                                <use href="./img/sprite.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <div class="attention-describtion">
+                            <h3 class="attention-header">Современные технологии</h3>
+                            <p class="attention-paragraph">Значимость этих проблем настолько очевидна, что реализация
+                                плановых заданий.</p>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
@@ -128,16 +161,16 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="networks-box-item twiter">
-                                    <a href="" class="network-link">
-                                        <svg class="network-link-icon">
+                                <li class="networks-box-item ">
+                                    <a href="" class="network-link twiter-link" >
+                                        <svg class="network-link-icon twiter">
                                             <use href="./img/sprite.svg#icon-twiter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="networks-box-item facebook">
-                                    <a href="" class="network-link">
-                                        <svg class="network-link-icon">
+                                <li class="networks-box-item ">
+                                    <a href="" class="network-link " >
+                                        <svg class="network-link-icon facebook">
                                             <use href="./img/sprite.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
@@ -269,8 +302,54 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <h2 class="header">Постоянные клиенты</h2>
+        <section class="section">
+            <div class="container">
+                <h2 class="header">Постоянные клиенты</h2>
+                <ul class="client-list">
+                    <li class="client-list-item">
+                        <a href="" class="client-list-link">
+                            <svg class="client-list-link-icon">
+                                <use href="./img/sprite.svg#icon-logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-list-item">
+                        <a href="" class="client-list-link">
+                            <svg class="client-list-link-icon">
+                                <use href="./img/sprite.svg#icon-logo-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-list-item">
+                        <a href="" class="client-list-link">
+                            <svg class="client-list-link-icon">
+                                <use href="./img/sprite.svg#icon-logo-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-list-item">
+                        <a href="" class="client-list-link">
+                            <svg class="client-list-link-icon">
+                                <use href="./img/sprite.svg#icon-logo-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-list-item">
+                        <a href="" class="client-list-link">
+                            <svg class="client-list-link-icon">
+                                <use href="./img/sprite.svg#icon-logo-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-list-item">
+                        <a href="" class="client-list-link">
+                            <svg class="client-list-link-icon">
+                                <use href="./img/sprite.svg#icon-logo-6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             
         </section>
     </main>
@@ -294,10 +373,34 @@
                 <div>
                     <p class="footer-paragraph">присоединяйтесь</p>
                     <ul class="footer-networks">
-                        <li class="footer-network-item "><a href="#" class="network icon-insta"></a></li>
-                        <li class="footer-network-item"><a href="#" class="network  icon-twit"></a></li>
-                        <li class="footer-network-item"><a href="#" class="network  icon-face"></a></li>
-                        <li class="footer-network-item "><a href="#" class="network icon-link"></a></li>
+                        <li class="footer-network-item ">
+                            <a href="#" class="network ">
+                                <svg class="network-icon">
+                                    <use href="./img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-network-item">
+                            <a href="#" class="network ">
+                                <svg class="network-icon">
+                                    <use href="./img/sprite.svg#icon-twiter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-network-item">
+                            <a href="#" class="network ">
+                                <svg class="network-icon">
+                                    <use href="./img/sprite.svg#icon-facebook"></use>
+                                </svg >
+                            </a>
+                        </li>
+                        <li class="footer-network-item ">
+                            <a href="#" class="network ">
+                                <svg class="network-icon">
+                                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
