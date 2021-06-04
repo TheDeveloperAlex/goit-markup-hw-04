@@ -197,7 +197,9 @@ p {
 
 .bg-img {
   height: 600px;
-  max-width: 1600px;
+  /* max-width: 1600px; */
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -343,7 +345,7 @@ h3 {
 /* ---------------------------------Чем мы занимаемся --------------------------------- */
 
 .doing-section {
-  padding-top: 0px;
+  padding-top: 94px;
 }
 
 .doing {
@@ -647,6 +649,7 @@ address {
 .filter-button {
   border-radius: 4px;
   padding: 6px 22px;
+  border: 0px;
 
   background-color: var(--bg-color);
   color: var(--header-color);
@@ -664,6 +667,9 @@ address {
 .filter-button:focus {
   background-color: var(--animation-color);
   color: var(--main-header-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*---------------------------------  СЕТКА  ---------------------------------*/
@@ -680,6 +686,12 @@ address {
 
   margin-top: var(--indent-30px);
   margin-left: var(--indent-30px);
+}
+
+.gallery-item:hover {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-box {
@@ -735,4 +747,8 @@ address {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
 }
